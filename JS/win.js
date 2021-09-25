@@ -9,7 +9,7 @@ resetButton.addEventListener('click', function () {
     location.href = "../index.html";
 })
 replayButton.addEventListener('click', function () {
-    location.href = "../html/game.html";
+    location.href = "../game.html";
 })
 
 

@@ -57,7 +57,7 @@ addEventListener("submit", function (e) {
         arrPlayers.push(players[i].value);
     }
     localStorage.myPlayers = JSON.stringify(arrPlayers);
-    location.href = "../html/game.html";
+    location.href = "../game.html";
 })
 
 rulesButton.addEventListener("click", () => {
