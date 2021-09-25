@@ -21,7 +21,7 @@ header{
     height: auto;
     justify-content: center;
     align-items: center;
-    font-size: 5rem;
+    font-size: 3rem;
 }
 
 #display-rules{
@@ -45,11 +45,11 @@ header{
     display: flex;
     flex-flow: column wrap;
     width: 100%;
-    padding: 50px;
+    /* padding: 50px; */
 }
 
 .rules-column h1,h2{
-    margin:5px 0;
+    margin:5px;
 }
 
 .forms{
@@ -59,7 +59,6 @@ header{
 
 select{
     text-align: center;
-    margin-top: 5px;
     padding:1em;
     width: 100%;
     border-radius: 10px;
@@ -70,13 +69,14 @@ select{
     width: 100%;
     display: block;
     padding: 1em;
-    margin-top: 1em;
+    border-bottom:1px solid rgba(0, 0, 0, 0.2);;
+    /* margin-top: 1em; */
 }
 
 #submitButton{
     position: fixed;
     bottom: 5%;
-    padding: 1.8em;
+    padding: 1.2em;
     width: 80%;
     background-color: white;
     font-size: 1rem;
@@ -85,6 +85,14 @@ select{
 }
 
 @media screen and (max-width: 1200px ) {
+    .content{
+        margin: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0);
+    }
+header{
+    color: rgb(255, 230, 0);
+}
     .rules-column{
         display:none;
     }
@@ -95,13 +103,16 @@ select{
         font-size: 3rem;
     }
     #display-rules{
-        position: absolute;
-        
+        position: absolute;  
         right: 0;
-        font-size: 2rem;
+        font-size: 1rem;
         display: block;
         border-radius: 10px;
         padding: 10px 15px;
         background-color: rgb(255, 255, 255);
+    }
+    #submitButton{
+        bottom:0;
+        width: 100%;
     }
 }

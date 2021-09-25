@@ -6,10 +6,10 @@ const replayButton = document.querySelector("#replay");
 h1.textContent = `${winner} vann!!`;
 resetButton.addEventListener('click', function () {
     localStorage.clear();
-    location.href = "index.html";
+    location.href = "/Idiom/index.html";
 })
 replayButton.addEventListener('click', function () {
-    location.href = "game.html";
+    location.href = "/Idiom/game.html";
 })
 
 

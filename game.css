@@ -62,3 +62,34 @@ margin-bottom: 5px;
     border-bottom:1px solid rgba(0, 0, 0, 0.2);
     color: black;
 }
+
+@media screen and (max-width: 1200px ) {
+   .container{
+     position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0; 
+    border-radius: 2%;
+    justify-content: center;
+    background-color:rgba(0,0,0,0);
+}
+.boxes{
+    height: 100vh;;
+}
+.top{
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(255, 230, 0);
+}
+.middle{
+    font-size: 1.4rem;
+}
+.midButtons{
+    font-size: 1.4rem;
+    margin: 10px;
+    padding: 10px;
+    border:1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+}
