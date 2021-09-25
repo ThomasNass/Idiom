@@ -1,0 +1,107 @@
+@import url(styles.css);
+
+a:visited{
+    color: black;
+}
+
+.content{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 3% 10%; 
+    border-radius: 2%;
+    justify-content: center;
+      
+    background-color:rgba(255,255,255,0.7)
+}
+
+header{
+    display: flex;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+}
+
+#display-rules{
+    display: none;
+}
+
+.columns{
+    display: flex;
+   flex-direction: row;
+   height: 78vh;
+    
+}
+
+.forms-column{
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+}
+
+.rules-column{
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    padding: 50px;
+}
+
+.rules-column h1,h2{
+    margin:5px 0;
+}
+
+.forms{
+    text-align: center;
+    padding: 1em;
+}
+
+select{
+    text-align: center;
+    margin-top: 5px;
+    padding:1em;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.players{
+    text-align: center;
+    width: 100%;
+    display: block;
+    padding: 1em;
+    margin-top: 1em;
+}
+
+#submitButton{
+    position: fixed;
+    bottom: 5%;
+    padding: 1.8em;
+    width: 80%;
+    background-color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    
+}
+
+@media screen and (max-width: 1200px ) {
+    .rules-column{
+        display:none;
+    }
+    .columns{
+        height: 90vh;
+    }
+    header{
+        font-size: 3rem;
+    }
+    #display-rules{
+        position: absolute;
+        
+        right: 0;
+        font-size: 2rem;
+        display: block;
+        border-radius: 10px;
+        padding: 10px 15px;
+        background-color: rgb(255, 255, 255);
+    }
+}

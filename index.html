@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Screen</title>
+    <link rel="stylesheet" href="/css/start.css">
+    <script src="https://kit.fontawesome.com/a6c416b03d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- content start -->
+    <section class="content">
+        <header>IDIOM <button id="display-rules"><i class="fas fa-book"></i></button></header>
+
+        <!-- columns start -->
+        <section class="columns">
+            <!-- forms-column start -->
+            <div class="forms-column">
+                <div class="forms scoreForm">
+                    <form method="POST" action="../html/game.html">
+                        <label class="label">Antal poäng som krävs för att vinna</label><br>
+                        <select name="" id="winningScore">
+                            <option value="3">Välj antal</option>
+                            <option value="3">3</option>
+                            <option value="5">5</option>
+                            <option value="10">10</option>
+                            <option value="15">15</option>
+                            <option value="20">20</option>
+                            <option value="30">30</option>
+                        </select>
+                </div>
+                <div class="forms timeForm">
+                    <form method="POST" action="../html/game.html">
+                        <label class="label">Timer</label><br>
+                        <select name="" id="timer">
+                            <option value="120">Välj tid</option>
+                            <option value="60">1 minut</option>
+                            <option value="120">2 minuter</option>
+                            <option value="180">3 minuter</option>
+                        </select>
+                </div>
+                <div class="forms playerForm">
+                    <form method="POST" action="../html/game.html">
+                        <label class="label">Hur många ska spela?</label><br>
+                        <select name="" id="playerCount">
+                            <option value="">Välj antal</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                        </select>
+                </div>
+
+
+                <div id="textFields" class="forms">
+                    <label for="textFields"></label>
+                </div>
+                <div class="footer">
+                    <button id="submitButton" type="submit">Börja Spela</button>
+                </div>
+                </form>
+            </div>
+            <!-- forms-column end -->
+            <!-- rules-column start -->
+            <div class="rules-column">
+                <h1>Hur spelar man spelet?</h1>
+                <p>Detta är ett rita och gissa-spel, alternativt ett charadspel, som kretsar kring idiomatiska uttryck
+                    och
+                    är
+                    indelat i två faser.</p>
+                <h2>Vad är ett idiomatiskt uttryck?</h2>
+                <q>Ett idiomatiskt uttryck är ett talesätt eller en fast fras som ingår i en språkvarietet, där
+                    betydelsen inte
+                    framgår av
+                    de enskilda ordens betydelser, t.ex. "byta fot", 'plötsligt ändra åsikt'. </q>
+                <cite><a href="https://sv.wikipedia.org/wiki/Idiom_(spr%C3%A5k)" target="_blank">Wikipedia</a></cite>
+                <h2>Fas 1</h2>
+                <p> En spelare tilldelas automatiskt rollen som den aktiva spelaren. Spelaren kommer att få ett
+                    idiomatiskt
+                    uttryck på
+                    skärmen, som den sedan skall antingen rita eller gestikulera inom den angivna tidsramen. Spelaren
+                    kommer
+                    kunna välja ett nytt slumpartat idiomatiskt uttryck, med hjälp av <i
+                        class="fas fa-sync"></i>-knappen,
+                    om
+                    det första var
+                    för
+                    klurigt. När spelaren känner sig redo så är det dags att klicka på <i
+                        class="far fa-hourglass"></i>-knappen
+                    för att timern ska starta, och fas 2 kan börja.
+                </p>
+                <h2>Fas 2</h2>
+                <p> Nu ska den aktiva spelaren försöka rita eller gestikulera det idiomatiska uttrycket, och de andra
+                    ska
+                    försöka gissa vilket
+                    uttryck det rör sig om till dess att någon har gissat rätt, eller att tiden har gått ut. Om någon
+                    gissar
+                    rätt
+                    så klickar den aktiva spelaren på den personens namn och båda får poäng. Om ingen gissar rätt så
+                    delas inga poäng ut. Oavsett så går turen vidare till nästa spelare, och fas 1 inleds igen. </p>
+
+            </div>
+            <!-- rules-column end -->
+        </section>
+        <!-- columns end -->
+    </section>
+    <!-- content end -->
+    <script src="/JS/start.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: Ubuntu, Helvetica, sans-serif;
+}
+
+body{
+    overflow: hidden;
+    background-image: url(/images/flag.jpg);
+}
+
+
