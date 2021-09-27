@@ -15,6 +15,13 @@ const scoreSound = new Audio("/Idiom/sounds/success.wav");
 const timeStart = new Audio("/Idiom/sounds/starttime.wav");
 const timeRunning = new Audio("/Idiom/sounds/16sec.wav");
 
+window.addEventListener("load", function () {
+    setTimeout(function () {
+        // This hides the address bar:
+        window.scrollTo(0, 1);
+    }, 0);
+});
+
 // A loop to dynamically add player buttons with the names from local storage
 //Create an object for each button as well as an eventListener
 for (let i = 0; i < numberOfPlayers.length; i++) {
