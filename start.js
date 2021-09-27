@@ -63,6 +63,27 @@ addEventListener("submit", function (e) {
     location.href = "game.html";
 })
 
+
+//Function to make enter work as tab (aimed at phone usage)
+let q;
+addEventListener("keypress", function (event) {
+    let players = document.querySelectorAll(".players");
+    console.log(q)
+    if (q == null) {
+        q = 1;
+    }
+    if ((event.key === "Enter")) {
+        if (q === players.length) {
+            q = 0;
+        }
+        else {
+            players[q].focus({ preventScroll: false });
+            q++;
+            console.log(q);
+        }
+    }
+})
+
 rulesButton.addEventListener("click", () => {
     if (displayRules == false) {
         rulesColumn.style.display = "block";
