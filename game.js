@@ -18,7 +18,7 @@ const timeRunning = new Audio("/Idiom/sounds/16sec.wav");
 window.addEventListener("load", function () {
     setTimeout(function () {
         // This hides the address bar:
-        window.scrollTo(0, 1);
+        window.scrollTo(0, 100);
     }, 0);
 });
 

@@ -6,7 +6,7 @@ const replayButton = document.querySelector("#replay");
 window.addEventListener("load", function () {
     setTimeout(function () {
         // This hides the address bar:
-        window.scrollTo(0, 1);
+        window.scrollTo(0, 100);
     }, 0);
 });
 
