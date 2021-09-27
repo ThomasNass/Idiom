@@ -7,13 +7,6 @@ formsColumn = document.querySelector(".forms-column");
 rulesColumn = document.querySelector(".rules-column");
 let displayRules = false;
 
-window.addEventListener("load", function () {
-    setTimeout(function () {
-        // This hides the address bar:
-        window.scrollTo(0, 100);
-    }, 0);
-});
-
 // sending score to win to the next page
 winningScore.addEventListener("change", function () {
     localStorage.winningScore = parseInt(this.value);
