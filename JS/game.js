@@ -105,7 +105,7 @@ function nextPlayer() {
 // also displays the current idiom as well as who goes next
 function clearTimer(interval) {
     nextPlayer();
-    idiomDisplay.innerHTML = `${idiom}.<br>Skicka telefonen till ${numberOfPlayers[j].button.name}.`;
+    idiomDisplay.innerText = `${idiom}.<br>Skicka telefonen till ${numberOfPlayers[j].button.name}.`;
     clearInterval(interval);
     idiomButton.disabled = false;
 }
