@@ -10,10 +10,10 @@ winningDisplay.textContent = winningScore;
 skipButton.disabled = true;
 timerButton.disabled = true;
 idiomDisplay.textContent = `Ge enheten till ${numberOfPlayers[0]}`;
-const timeUp = new Audio("/Idiom/sounds/sadhorn.wav");
-const scoreSound = new Audio("/Idiom/sounds/success.wav");
-const timeStart = new Audio("/Idiom/sounds/starttime.wav");
-const timeRunning = new Audio("/Idiom/sounds/16sec.wav");
+const timeUp = new Audio("../sounds/sadhorn.wav");
+const scoreSound = new Audio("../sounds/success.wav");
+const timeStart = new Audio("../sounds/starttime.wav");
+const timeRunning = new Audio("../sounds/16sec.wav");
 
 window.addEventListener("load", function () {
     setTimeout(function () {
@@ -130,15 +130,15 @@ function updateScores(player) {
     player.score++ & numberOfPlayers[j].score++;
     if (player.score === winningScore && numberOfPlayers[j].score === winningScore) {
         localStorage.winner = `${player.button.name} & ${numberOfPlayers[j].button.name}`;
-        location.href = "/Idiom/win.html";
+        location.href = "../win.html";
     }
     else if (player.score === winningScore) {
         localStorage.winner = `${player.button.name}`;
-        location.href = "/Idiom/win.html";
+        location.href = "../win.html";
     }
     else if (numberOfPlayers[j].score === winningScore) {
         localStorage.winner = `${numberOfPlayers[j].button.name}`;
-        location.href = "/Idiom/win.html"
+        location.href = "../win.html"
     }
     numberOfPlayers[j].button.textContent = `${numberOfPlayers[j].button.name} poäng: ${numberOfPlayers[j].score}`;
     player.button.textContent = `${player.button.name} poäng: ${player.score}`;
