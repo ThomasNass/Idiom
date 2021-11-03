@@ -13,10 +13,10 @@ window.addEventListener("load", function () {
 h1.textContent = `${winner} vann!!`;
 resetButton.addEventListener('click', function () {
     localStorage.clear();
-    location.href = "Idiom/index.html";
+    location.href = "/Idiom/index.html";
 })
 replayButton.addEventListener('click', function () {
-    location.href = "Idiom/game.html";
+    location.href = "/Idiom/game.html";
 })
 
 
