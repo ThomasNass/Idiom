@@ -105,7 +105,7 @@ function nextPlayer() {
 // also displays the current idiom as well as who goes next
 function clearTimer(interval) {
     nextPlayer();
-    idiomDisplay.innerText = `${idiom}.<br>Skicka telefonen till ${numberOfPlayers[j].button.name}.`;
+    idiomDisplay.innerHTML = `${idiom}.<br>Skicka telefonen till ${numberOfPlayers[j].button.name}.`;
     clearInterval(interval);
     idiomButton.disabled = false;
 }
@@ -130,15 +130,15 @@ function updateScores(player) {
     player.score++ & numberOfPlayers[j].score++;
     if (player.score === winningScore && numberOfPlayers[j].score === winningScore) {
         localStorage.winner = `${player.button.name} & ${numberOfPlayers[j].button.name}`;
-        location.href = "/win.html";
+        location.href = "Idiom/win.html";
     }
     else if (player.score === winningScore) {
         localStorage.winner = `${player.button.name}`;
-        location.href = "/win.html";
+        location.href = "Idiom/win.html";
     }
     else if (numberOfPlayers[j].score === winningScore) {
         localStorage.winner = `${numberOfPlayers[j].button.name}`;
-        location.href = "/win.html";
+        location.href = "Idiom/win.html";
     }
     numberOfPlayers[j].button.textContent = `${numberOfPlayers[j].button.name} poäng: ${numberOfPlayers[j].score}`;
     player.button.textContent = `${player.button.name} poäng: ${player.score}`;
